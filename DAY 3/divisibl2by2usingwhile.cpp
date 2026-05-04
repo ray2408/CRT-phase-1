@@ -1,10 +1,10 @@
 #include <iostream>
-using namespace std;
+using namespace std;9
 
 int main() {
     int n;
     cout << "Enter the value of n: ";
-    cin >> n;
+    cin >> n; 
 
     int i = 1; // Starting number
     while (i <= n) {
