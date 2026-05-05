@@ -6,12 +6,8 @@ int main()
     int a, b;
     cin >> a >> b;
 
-    int temp = a;
-    a = b;
-    b = temp;
-
-    cout << a << "\n"
-         << b << endl;
+    int max_val = (a > b) ? a : b;
+    cout << max_val;
 
     return 0;
 }
