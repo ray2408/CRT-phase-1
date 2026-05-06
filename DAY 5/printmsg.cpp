@@ -1,4 +1,4 @@
-//functions//
+//functions basic message print//
 
 #include <iostream>
 using namespace std;
