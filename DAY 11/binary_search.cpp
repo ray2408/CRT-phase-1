@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+int binary_search(int nums[], int n, int target){
+    int left=0;
+    int right=n-1;
+
+    while(left<=right){
+        int mid= left+(right-left)/2;
+
+        if(nums[mid]==target){
+            return mid;
+        }
+        else if(nums[mid]>target){
+            right=mid-1;
+        }
+        else{
+            left=mid+1;
+        }
+    }
+    return -1;//element not found
+}
+
+int main(){
+    int arr[5]={1,2,3,4,5};
+    int size= sizeof(arr)/sizeof(arr[0]);
+
+    int ans= binary_search(arr,size,3);
+    cout<<"element found at index:"<< ans<< endl;
+
+    return 0;
+}
