@@ -15,7 +15,8 @@ int binary_search(int nums[], int n, int target){
             right=mid-1;
         }
         else{
-            left=mid+1;
+            left
+            =mid+1;
         }
     }
     return -1;//element not found
